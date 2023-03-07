@@ -180,10 +180,9 @@ img {
   right: 6.4rem;
 }
 
-.login img{
+.login img {
   position: relative;
   right: 7.2rem;
-
 }
 
 .lg__btn p {
@@ -230,7 +229,6 @@ img {
   }
 }
 
-
 @media screen and (max-width: 500px) {
   .container {
     width: var(--container-width-sm);
@@ -242,62 +240,62 @@ img {
 
   .signup__container {
     transform: translate(-0.46%, 35%);
-}
+  }
 
-.lg__btn {
-  width: 23rem;
-  padding: 0.49rem 0.2rem;
-}
+  .lg__btn {
+    width: 23rem;
+    padding: 0.49rem 0.2rem;
+  }
 
-.lg__btn img {
-  width: 1.6rem;
-  right: 3.9rem;
-}
+  .lg__btn img {
+    width: 1.6rem;
+    right: 3.9rem;
+  }
 
-.login img {
-  right: 4.8rem;
-}
+  .login img {
+    right: 4.8rem;
+  }
 
-.lg__btn p {
-  font-size: 0.979rem;
-}
+  .lg__btn p {
+    font-size: 0.979rem;
+  }
 }
 
 @media screen and (max-width: 375px) {
   .lg__btn {
     width: 19rem;
+  }
+
+  .lg__btn img {
+    width: 1.5rem;
+    right: 2.59rem;
+  }
+
+  .login img {
+    width: 1.5rem;
+    right: 3.4rem;
+  }
+
+  .lg__btn p {
+    font-size: 0.86rem;
+  }
 }
 
-.lg__btn img {
-  width: 1.5rem;
-  right: 2.59rem;
-}
-
-.login img {
-  width: 1.5rem;
-  right: 3.4rem;
-}
-
-.lg__btn p {
-  font-size: 0.86rem;
-}
-}
-
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 300px) {
   .lg__btn {
     width: 16rem;
-}
+  }
 
-.lg__btn img {
-  right: 2rem;
-}
+  .lg__btn img {
+    right: 2rem;
+  }
 
-.login img {
-  width: 1.5rem;
-  right: 2rem;
-}
+  .login img {
+    width: 1.5rem;
+    right: 2rem;
+  }
 
-.lg__btn p {
-  font-size: 0.86rem;
-}
+  .lg__btn p {
+    font-size: 0.86rem;
+  }
 }
