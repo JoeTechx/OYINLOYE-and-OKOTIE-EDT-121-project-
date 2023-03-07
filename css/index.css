@@ -282,3 +282,22 @@ img {
   font-size: 0.86rem;
 }
 }
+
+@media screen and (max-width: 320px) {
+  .lg__btn {
+    width: 16rem;
+}
+
+.lg__btn img {
+  right: 2rem;
+}
+
+.login img {
+  width: 1.5rem;
+  right: 2rem;
+}
+
+.lg__btn p {
+  font-size: 0.86rem;
+}
+}
