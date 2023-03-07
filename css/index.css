@@ -249,11 +249,36 @@ img {
   padding: 0.49rem 0.2rem;
 }
 
+.lg__btn img {
+  width: 1.6rem;
+  right: 3.9rem;
+}
+
 .login img {
   right: 4.8rem;
 }
 
 .lg__btn p {
   font-size: 0.979rem;
+}
+}
+
+@media screen and (max-width: 375px) {
+  .lg__btn {
+    width: 19rem;
+}
+
+.lg__btn img {
+  width: 1.5rem;
+  right: 2.59rem;
+}
+
+.login img {
+  width: 1.5rem;
+  right: 3.4rem;
+}
+
+.lg__btn p {
+  font-size: 0.86rem;
 }
 }
