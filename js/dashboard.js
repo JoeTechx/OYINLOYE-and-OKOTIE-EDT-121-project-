@@ -23,7 +23,6 @@
             <img src="${user.photoURL}"style="width:width: 10%">       
             <p>${user.displayName}</p>
             <p>${user.email}</p>
-            
             `
         }
         function checkAuthState(){

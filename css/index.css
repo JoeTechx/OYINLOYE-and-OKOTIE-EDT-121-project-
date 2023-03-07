@@ -229,3 +229,31 @@ img {
     margin-bottom: 2rem;
   }
 }
+
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+
+  section > h2 {
+    margin-bottom: 2rem;
+  }
+
+  .signup__container {
+    transform: translate(-0.46%, 35%);
+}
+
+.lg__btn {
+  width: 23rem;
+  padding: 0.49rem 0.2rem;
+}
+
+.login img {
+  right: 4.8rem;
+}
+
+.lg__btn p {
+  font-size: 0.979rem;
+}
+}
