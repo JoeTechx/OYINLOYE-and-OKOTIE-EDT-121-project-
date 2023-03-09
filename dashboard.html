@@ -4,11 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+   />
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+  <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="./css/dashboard.css" />
     <title>E-course open source app</title>
 </head>
 <body>
-    <div id="user__details"></div>
-    <button id="logout">logout</button>
+    <div class="container header-logo">
+        <div class="project__logo">
+          <img src="./assets/projectlogo.png" alt="logo" />
+        </div>
+        <button id="logout" class="btn btn-primary btn__small">logout</button>
+      </div>
+      <div class="courses__user-details">
+      <div class="course__title-btn">
+        <a href="./csc.html" class="btn btn-primary course__btn">
+            <p>CSC</p>
+        </a>
+        <a href="./tcs.html" class="btn btn-primary course__btn">
+                <p>TCS</p>
+        </a>
+        <a href="./edt.html" class="btn btn-primary course__btn">
+                <p>EDT</p>
+        </a>
+      </div>
+    <div id="user__details" class="users__details"></div>
+  </div>
 
     <script src="./js/dashboard.js" type="module"></script>
 </body>

@@ -20,9 +20,10 @@
 
         function showUserDetails(user){
             document.getElementById("user__details").innerHTML =`
-            <img src="${user.photoURL}"style="width:width: 10%">       
-            <p>${user.displayName}</p>
-            <p>${user.email}</p>
+            <img src="${user.photoURL}" class="user__img">       
+            <p class="user display__name">Welcome back: ${user.displayName}</p>
+            <p class="user email">${user.email}</p>
+            <p class="user text">Pick the course of your choice <br/> to study ahead of your lecturer</p>
             `
         }
         function checkAuthState(){
@@ -34,6 +35,7 @@
               // ...
             } else {
               // User is signed out
+              window.location = 'index.html'
               // ...
             }
           });

@@ -85,7 +85,7 @@ a {
   transition: var(--transition);
 }
 a:hover {
-  color: var(--color-primary-2);
+  color: var(--color-light);
 }
 
 .btn {
@@ -104,11 +104,6 @@ a:hover {
   color: var(--color-bg);
 }
 
-.btn-primary:hover {
-  background-color: transparent;
-  color: var(--color-primary);
-  border: 2px solid var(--color-primary);
-}
 
 img {
   display: block;
@@ -127,6 +122,7 @@ img {
 
 .header-logo {
   display: flex;
+  justify-content: space-between;
 }
 .project__logo {
   width: 10rem;
@@ -157,6 +153,15 @@ img {
   font-size: 1.2rem;
   font-weight: 600;
   margin-top: 0.6rem;
+  color: rgba(19, 31, 40, 0.4);
+}
+
+.login__signUp-link a{
+color: rgba(19, 31, 40, 0.4) !important;
+}
+
+.login__signUp-link a:hover{
+color: rgba(3, 12, 45, 0.907) !important;
 }
 
 .googleBtn__socials {
