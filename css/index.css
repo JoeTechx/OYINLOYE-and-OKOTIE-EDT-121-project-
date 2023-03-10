@@ -286,6 +286,10 @@ color: rgba(3, 12, 45, 0.907) !important;
 .lg__btn p {
   font-size: 0.86rem;
 }
+.project__logo {
+  width: 7rem;
+  margin-top: 1rem;
+}
 }
 
 @media screen and (max-width: 320px) {

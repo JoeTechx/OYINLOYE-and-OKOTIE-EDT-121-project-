@@ -35,7 +35,7 @@
               // ...
             } else {
               // User is signed out
-              window.location = 'index.html'
+              // window.location = 'index.html'
               // ...
             }
           });
@@ -51,3 +51,23 @@
         });              
     }
     checkAuthState();
+
+const logout = document.querySelector(".logout__btn")
+  const menuBtn = document.getElementById("menu__btn");
+  const closeBtn = document.getElementById("close__btn");
+
+  if (menuBtn) {
+    menuBtn.addEventListener("click", () => {
+      logout.classList.add("show__nav");
+      closeBtn.classList.add("show-Btn");
+      menuBtn.classList.add("show-menuBtn");
+    });
+  }
+
+  if (closeBtn) {
+    closeBtn.addEventListener("click", () => {
+      logout.classList.remove("show__nav");
+      closeBtn.classList.remove("show-Btn");
+      menuBtn.classList.remove("show-menuBtn");
+    });
+  }
