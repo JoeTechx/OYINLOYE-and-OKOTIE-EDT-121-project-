@@ -19,11 +19,20 @@
         document.getElementById("logout").addEventListener("click", logoutUser);
 
         function showUserDetails(user){
+
+
+            document.getElementById("user__profileURL").innerHTML =`
+            <img src="${user.photoURL}" class="user__img"> 
+            `
             document.getElementById("user__details").innerHTML =`
-            <img src="${user.photoURL}" class="user__img">       
-            <p class="user display__name">Welcome back: ${user.displayName}</p>
+            <div class="pne__info">
+            <img src="${user.photoURL}" class="user__img-info csc__img"> 
+            <div class="en__info">
+            <p class="user display__name">Hello: ${user.displayName}</p>
             <p class="user email">${user.email}</p>
+            </div>
             <p class="user text">Pick the course of your choice <br/> to study ahead of your lecturer</p>
+            </div>
             `
         }
         function checkAuthState(){

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/csc.css" />
+    <title>E-course open source app</title>
+  </head>
+  <body>
+    <div class="container header-logo csc__header">
+      <div class="project__logo csc__logo">
+        <img src="./assets/projectlogo.png" alt="logo" />
+      </div>
+      <div id="user__profileURL" class="users__profileURL"></div>
+      <div class="user__info">
+        <div id="user__details" class="users__details"></div>
+        <hr class="seperator__line">
+        <ul class="nav__menu-info">
+          <li class="nav__list-info">
+            <i class="uil uil-apps nav__icon-info"></i>
+            <a href="./dashboard.html" class="nav__link-info">go to dashboard</a>
+          </li>
+          <li class="nav__list-info">
+            <i class="uil uil-import nav__icon-info"></i>
+            <a href="./download.html" class="nav__link-info">my downloads</a>
+          </li>
+          <li class="nav__list-info">
+            <i class="uil uil-setting nav__icon-info"></i>
+            <a href="./settings.html" class="nav__link-info">settings</a>
+          </li>
+          <li id="logout" class="logout__btn csc__logout nav__list-logout">
+            <i class="uil uil-sign-out-alt nav__icon-info"></i>
+            <p class="nav__link-logout">logout</p>
+          </li>
+        </ul>
+    </div>
+      <button id="menu__btn" class="btn btn__small menu__btn nav__btn">
+        <img src="./assets/menu-dots.png" alt="" />
+      </button>
+      <button id="close__btn" class="btn btn__small close__btn nav__btn">
+        <img src="./assets/cross.png" alt="" />
+      </button>
+    </div>
+
+    <section class="course__page">
+      <nav class="left__course-outline">
+        <h2 class="csc__code">CSC 111</h2>
+        <div class="course__outline">
+          <hr class="seperator__nav">
+          <P class="co__title active">course outline</P>
+          <hr class="seperator__nav">
+          <div class="top__course-outline">
+            <ul>
+              <li class="course__nav">
+                <span>historical development of computer</span>
+              </li>
+              <hr class="seperator__nav">
+              <li class="course__nav">
+                <span>number system</span>
+              </li>
+              <hr class="seperator__nav">
+              <li class="course__nav">
+                <span>characteristics of computer</span>
+              </li>
+              <hr class="seperator__nav">
+              <li class="drop__down-content">
+                <div class="hw__sw-header">
+                  <span class="vr__title">basic component of computer </span>
+                  <div class="course__arrow">
+                    <div>
+                    <i class="uil uil-angle-right"></i>
+                    </div>
+                    <div>
+                    <i class="uil uil-angle-down"></i>
+                  </div>
+                  </div>
+                  </div>
+                <ul class="hw__sw-course">
+                  <li class="hw__nav drop__nav">hardware</li>
+                  <li class="sw__nav drop__nav">software</li>
+                </ul>
+              </li>
+              <hr class="seperator__nav">
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="right__quick-action"></div>
+    </section>
+  </body>
+  <script src="./js/dashboard.js" type="module"></script>
+  <script src="./js/csc.js"></script>
+</html>
