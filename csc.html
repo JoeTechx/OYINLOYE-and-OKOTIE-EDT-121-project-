@@ -30,11 +30,13 @@
       <div id="user__profileURL" class="users__profileURL"></div>
       <div class="user__info">
         <div id="user__details" class="users__details"></div>
-        <hr class="seperator__line">
+        <hr class="seperator__line" />
         <ul class="nav__menu-info">
           <li class="nav__list-info">
             <i class="uil uil-apps nav__icon-info"></i>
-            <a href="./dashboard.html" class="nav__link-info">go to dashboard</a>
+            <a href="./dashboard.html" class="nav__link-info"
+              >go to dashboard</a
+            >
           </li>
           <li class="nav__list-info">
             <i class="uil uil-import nav__icon-info"></i>
@@ -49,7 +51,7 @@
             <p class="nav__link-logout">logout</p>
           </li>
         </ul>
-    </div>
+      </div>
       <button id="menu__btn" class="btn btn__small menu__btn nav__btn">
         <img src="./assets/menu-dots.png" alt="" />
       </button>
@@ -62,46 +64,195 @@
       <nav class="left__course-outline">
         <h2 class="csc__code">CSC 111</h2>
         <div class="course__outline">
-          <hr class="seperator__nav">
-          <P class="co__title active">course outline</P>
-          <hr class="seperator__nav">
+          <hr class="seperator__nav" />
+          <ul>
+            <li class="co__title active__nav is-active">
+              <a
+                href="#course_outline"
+                data-switcher
+                data-tab="1"
+                id="co__title"
+                >course outline</a
+              >
+            </li>
+            <hr class="seperator__nav" />
+          </ul>
           <div class="top__course-outline">
             <ul>
-              <li class="course__nav">
-                <span>historical development of computer</span>
+              <li class="course__nav active__nav" id="nav__list-1">
+                <a
+                  href="#historical_development_of_computer"
+                  data-switcher
+                  data-tab="2"
+                  >historical development of computer</a
+                >
               </li>
-              <hr class="seperator__nav">
-              <li class="course__nav">
-                <span>number system</span>
+              <hr class="seperator__nav" />
+              <li class="course__nav active__nav" id="nav__list-2">
+                <a href="#number_system" data-switcher data-tab="3"
+                  >number system</a
+                >
               </li>
-              <hr class="seperator__nav">
-              <li class="course__nav">
-                <span>characteristics of computer</span>
+              <hr class="seperator__nav" />
+              <li class="course__nav active__nav" id="nav__list-3">
+                <a
+                  href="#characteristics_of_computer"
+                  data-switcher
+                  data-tab="4"
+                  >characteristics of computer</a
+                >
               </li>
-              <hr class="seperator__nav">
+              <hr class="seperator__nav" />
+              <li class="course__nav active__nav" id="nav__list-3">
+                <a
+                  href="#characteristics_of_computer"
+                  data-switcher
+                  data-tab="5"
+                  >characteristics of computer</a
+                >
+              </li>
+              <hr class="seperator__nav" />
               <li class="drop__down-content">
                 <div class="hw__sw-header">
                   <span class="vr__title">basic component of computer </span>
                   <div class="course__arrow">
                     <div>
-                    <i class="uil uil-angle-right"></i>
+                      <i class="uil uil-angle-right"></i>
                     </div>
                     <div>
-                    <i class="uil uil-angle-down"></i>
+                      <i class="uil uil-angle-down"></i>
+                    </div>
                   </div>
-                  </div>
-                  </div>
+                </div>
                 <ul class="hw__sw-course">
-                  <li class="hw__nav drop__nav">hardware</li>
-                  <li class="sw__nav drop__nav">software</li>
+                  <li class="hw__nav drop__nav active__nav" id="nav__list-4">
+                    <a href="#hardware" data-switcher data-tab="6">hardware</a>
+                  </li>
+                  <li class="sw__nav drop__nav active__nav" id="nav__list-5">
+                    <a href="#software" data-switcher data-tab="7">software</a>
+                  </li>
                 </ul>
               </li>
-              <hr class="seperator__nav">
+              <hr class="seperator__nav" />
             </ul>
           </div>
         </div>
       </nav>
-      <div class="right__quick-action"></div>
+      <div class="pages">
+        <div class="quick-action page is-active" data-page="1">
+          <p class="action__title">Quick Action</p>
+          <div class="cards">
+            <article class="card">
+              <img src="./assets/edt121img 1.png" alt="" class="card__img" />
+              <a href="./edt.html" class="card__title">edt 121</a>
+            </article>
+            <article class="card">
+              <img src="./assets/csc111 img 1.png" alt="" class="card__img" />
+              <a href="./csc.html" class="card__title">csc 111</a>
+            </article>
+            <article class="card">
+              <img src="./assets/icsimg 1.png" alt="" class="card__img" />
+              <a href="./tcs.html" class="card__title">tcs 111</a>
+            </article>
+            <article class="card">
+              <img src="./assets/edt121img 1.png" alt="" class="card__img" />
+              <a href="./edt.html" class="card__title">edt 121</a>
+            </article>
+            <article class="card">
+              <img src="./assets/csc111 img 1.png" alt="" class="card__img" />
+              <a href="./csc.html" class="card__title">csc 111</a>
+            </article>
+            <article class="card">
+              <img src="./assets/icsimg 1.png" alt="" class="card__img" />
+              <a href="./tsc.html" class="card__title">tcs 111</a>
+            </article>
+          </div>
+        </div>
+
+        <div class="history__note page" data-page="2">
+          <p class="csc__course-note">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+            provident rem quibusdam beatae animi recusandae, ducimus hic placeat
+            ex quisquam voluptatem sequi voluptatibus dignissimos. Officia nulla
+            asperiores, sapiente totam adipisci reiciendis laudantium nihil
+            dolore nesciunt fuga itaque vel cupiditate rerum tempora, neque
+            quasi saepe suscipit beatae consectetur ratione incidunt sit?
+            Facere, ullam doloremque. Fugit, rerum quo? Dolorem cumque
+            consequatur officia animi quas! Adipisci voluptates harum expedita
+            cum dolorum quaerat omnis nemo magnam natus vero sapiente, veritatis
+            facere voluptatem quae doloremque quos quisquam doloribus
+            asperiores, est nobis officiis eum velit? Sunt nemo reprehenderit
+            consequatur neque sequi nesciunt sapiente provident adipisci
+            placeat.
+          </p>
+        </div>
+        <div class="history__note page" data-page="3">
+          <p class="csc__course-note">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+            provident rem quibusdam beatae animi recusandae, ducimus hic placeat
+            ex quisquam voluptatem sequi voluptatibus dignissimos. Officia nulla
+            asperiores, sapiente totam adipisci reiciendis laudantium nihil
+            dolore nesciunt fuga itaque vel cupiditate rerum tempora, neque
+            quasi saepe suscipit beatae consectetur ratione incidunt sit?
+            Facere, ullam doloremque. Fugit, rerum quo? Dolorem cumque
+            consequatur officia animi quas! Adipisci voluptates harum expedita
+            cum dolorum quaerat omnis nemo magnam natus vero sapiente, veritatis
+            facere voluptatem quae doloremque quos quisquam doloribus
+            asperiores, est nobis officiis eum velit? Sunt nemo reprehenderit
+            consequatur neque sequi nesciunt sapiente provident adipisci
+            placeat.
+          </p>
+        </div>
+        <div class="history__note page" data-page="4">
+          <p class="csc__course-note">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+            provident rem quibusdam beatae animi recusandae, ducimus hic placeat
+            ex quisquam voluptatem sequi voluptatibus dignissimos. Officia nulla
+            asperiores, sapiente totam adipisci reiciendis laudantium nihil
+            dolore nesciunt fuga itaque vel cupiditate rerum tempora, neque
+            quasi saepe suscipit beatae consectetur ratione incidunt sit?
+            Facere, ullam doloremque. Fugit, rerum quo? Dolorem cumque
+            consequatur officia animi quas! Adipisci voluptates harum expedita
+            cum dolorum quaerat omnis nemo magnam natus vero sapiente, veritatis
+            facere voluptatem quae doloremque quos quisquam doloribus
+            asperiores, est nobis officiis eum velit? Sunt nemo reprehenderit
+            consequatur neque sequi nesciunt sapiente provident adipisci
+            placeat.
+          </p>
+        <div class="history__note page" data-page="5">
+          <p class="csc__course-note">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+            provident rem quibusdam beatae animi recusandae, ducimus hic placeat
+            ex quisquam voluptatem sequi voluptatibus dignissimos. Officia nulla
+            asperiores, sapiente totam adipisci reiciendis laudantium nihil
+            dolore nesciunt fuga itaque vel cupiditate rerum tempora, neque
+            quasi saepe suscipit beatae consectetur ratione incidunt sit?
+            Facere, ullam doloremque. Fugit, rerum quo? Dolorem cumque
+            consequatur officia animi quas! Adipisci voluptates harum expedita
+            cum dolorum quaerat omnis nemo magnam natus vero sapiente, veritatis
+            facere voluptatem quae doloremque quos quisquam doloribus
+            asperiores, est nobis officiis eum velit? Sunt nemo reprehenderit
+            consequatur neque sequi nesciunt sapiente provident adipisci
+            placeat.
+          </p>
+        <div class="history__note page" data-page="6">
+          <p class="csc__course-note">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+            provident rem quibusdam beatae animi recusandae, ducimus hic placeat
+            ex quisquam voluptatem sequi voluptatibus dignissimos. Officia nulla
+            asperiores, sapiente totam adipisci reiciendis laudantium nihil
+            dolore nesciunt fuga itaque vel cupiditate rerum tempora, neque
+            quasi saepe suscipit beatae consectetur ratione incidunt sit?
+            Facere, ullam doloremque. Fugit, rerum quo? Dolorem cumque
+            consequatur officia animi quas! Adipisci voluptates harum expedita
+            cum dolorum quaerat omnis nemo magnam natus vero sapiente, veritatis
+            facere voluptatem quae doloremque quos quisquam doloribus
+            asperiores, est nobis officiis eum velit? Sunt nemo reprehenderit
+            consequatur neque sequi nesciunt sapiente provident adipisci
+            placeat.
+          </p>
+        </div>
+      </div>
     </section>
   </body>
   <script src="./js/dashboard.js" type="module"></script>

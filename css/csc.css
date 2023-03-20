@@ -15,10 +15,15 @@
   align-items: center;
 }
 
+
+.course__page {
+  display: flex;
+}
+
 .left__course-outline {
   background-color: var(--color-light);
   box-shadow: 0px 6px 8px rgb(0 0 0 / 20%);
-  height: 100vh;
+  min-height: 100vh;
   width: 25%;
 }
 .en__info {
@@ -75,6 +80,7 @@ p.user.email {
   box-shadow: 0px 8px 24px rgb(0 0 0 / 12%);
   border-radius: 0.5rem;
   top: 5rem;
+  background-color: var(--color-bg);
   padding: 1.3rem;
   transition: var(--transition);
   display: none;
@@ -160,9 +166,11 @@ li.nav__list-info:hover{
   padding: 0.1rem;
   padding-left: 1.6rem;
   font-size: 0.89rem;
+  font-weight: 600;
   width: 85%;
   border-radius: 0 0.79rem 0.79rem 0;
  margin: 0.7rem 0;
+ display: flex;
  cursor: pointer;
 }
 
@@ -182,6 +190,11 @@ li.course__nav {
   background-color: #ebedf5;
 }
 
+
+.course__nav a {
+  font-weight: 600;
+  color: #75797d;
+}
 .seperator__nav{
   border: 1px solid #ebedf5;
 }
@@ -209,19 +222,31 @@ li.drop__down-content {
   border-radius: 0 0.79rem 0.79rem 0;
   margin-left: -2rem;
   padding-left: 2.3rem;
+  margin-bottom: 0.3rem;
 }
 
-.active{
+.is-active{
+  background-color: #e8f0fe;
+  color:#6d8aff;
+}
+.is-active:hover{
   background-color: #e8f0fe;
   color:#6d8aff;
 }
 
-.active.course__nav {
+.is-active.course__nav {
+  background-color: #e8f0fe;
+  color:#6d8aff;
+}
+.is-active.course__nav:hover {
   background-color: #e8f0fe;
   color:#6d8aff;
 }
 
-.active span{
+.is-active a{
+  color:#6d8aff;
+}
+.is-active a:hover{
   color:#6d8aff;
 }
 
@@ -253,4 +278,51 @@ h2.csc__code {
 
 .show-text .uil-angle-right {
   display: none;
+}
+
+.pages {
+  display: flex;
+  margin: 3rem auto 0;
+  background-color: var(--color-bg);
+  box-shadow: 0px 0px 4px rgb(0 0 0 / 20%);
+  padding: 1rem;
+  flex-direction: column;
+  height: 100%;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.card {
+  border: 2px solid #eeeeee;
+  border-radius: 0.9rem;
+}
+
+.card__img {
+  width: 13rem;
+}
+
+.card__title {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0 0.9rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--color-login-text);
+}
+
+.history__note {
+  width: 40rem;
+}
+
+.pages .page {
+  display: none;
+}
+
+.pages .page.is-active{
+  display: block;
+  background-color: transparent;
 }

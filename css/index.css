@@ -71,7 +71,7 @@ a {
   transition: var(--transition);
 }
 a:hover {
-  color: var(--color-light);
+  color: rgb(58 62 74);
 }
 
 .btn {
