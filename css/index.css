@@ -40,7 +40,7 @@ html {
   display: none;
 } */
 body {
-  background-color: var(--color-bg);
+  background-color: var(--color-login);
   color: var(--color-text);
   font-family: var(--main-font-family);
   line-height: 1.7;
