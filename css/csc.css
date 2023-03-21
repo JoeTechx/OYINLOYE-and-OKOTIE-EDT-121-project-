@@ -1,6 +1,9 @@
 .csc__header{
   width: 100%;
   box-shadow: var(--drop-shadow);
+  position: fixed;
+    background: var(--color-bg);
+    z-index: 1;
 }
 
 .csc__logo{
@@ -21,10 +24,12 @@
 }
 
 .left__course-outline {
-  background-color: var(--color-light);
+  background-color: var(--color-bg);
   box-shadow: 0px 6px 8px rgb(0 0 0 / 20%);
   min-height: 100vh;
-  width: 25%;
+  width: 24%;
+  position: fixed;
+  margin-top: 4rem;
 }
 .en__info {
   margin-left: 1rem;
@@ -258,6 +263,7 @@ li.drop__down-content {
 h2.csc__code {
   padding: 1rem;
   color: var(--color-primary);
+  margin-top: 1rem;
 }
 /* hide text */
 .hw__sw-course {
@@ -282,10 +288,12 @@ h2.csc__code {
 
 .pages {
   display: flex;
-  margin: 3rem auto 0;
+  margin: 7rem auto 0;
   background-color: var(--color-bg);
   box-shadow: 0px 0px 4px rgb(0 0 0 / 20%);
   padding: 1rem;
+  z-index: -1;
+  transform: translateX(15%);
   flex-direction: column;
   height: 100%;
 }
