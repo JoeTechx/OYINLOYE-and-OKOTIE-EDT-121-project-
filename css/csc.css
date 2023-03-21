@@ -172,7 +172,7 @@ li.nav__list-info:hover{
   padding-left: 1.6rem;
   font-size: 0.89rem;
   font-weight: 600;
-  width: 85%;
+  width: 95%;
   border-radius: 0 0.79rem 0.79rem 0;
  margin: 0.7rem 0;
  display: flex;
@@ -185,7 +185,7 @@ li.course__nav {
   padding: 0.1rem;
   padding-left: 1.6rem;
  margin: 0.7rem 0;
-  width: 85%;
+ width: 95%;
   text-transform: capitalize;
   border-radius: 0 0.79rem 0.79rem 0;
   cursor: pointer;
@@ -215,7 +215,7 @@ li.drop__down-content {
   padding: 0.1rem;
   padding-left: 1.6rem;
   margin: 0.7rem 0;
-  width: 85%;
+  width: 95%;
   text-transform: capitalize;
   border-radius: 0 0.79rem 0.79rem 0;
 }
@@ -335,13 +335,14 @@ h2.csc__code {
 .pages .page.is-active{
   display: block;
   background-color: transparent;
+  width: 100%;
 }
 
 
 .lc__charge {
     padding: 0.5rem;
     background: #f0f9ff;
-    margin: -1rem 22rem 0 -1rem;
+    margin: -1rem 32rem 0 -1rem;
     font-size: 0.7rem;
     font-weight: 700;
 }
@@ -350,15 +351,88 @@ span.modu {
   font-size: 1.2rem;
   font-family: var(--regular-font-family);
   font-weight: 600;
+  display: flex;
+  margin-top: 0.6rem;
 }
 
 
 h4.mo__title {
   color: #06305b;
+  margin: 0 0rem 3rem -1rem;
+  padding: 1rem;
   text-align: center;
   margin-top: 2rem;
+  background: aliceblue;
   display: flex;
+  width: 104%;
   justify-content: center;
   align-items: center;
   font-weight: 600;
+}
+
+
+h4.cc__title {
+  background: #eef6fd;
+  width: 38%;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-left: -1rem;
+  margin-bottom: 1rem;
+  font-family: var(--regular-font-family);
+  padding: 0.2rem;
+  padding-left: 1rem;
+  border-radius: 0rem 4rem 4rem 0rem;
+}
+
+p.cc__note {
+  font-family: var(--regular-font-family);
+  font-weight: 400;
+  padding: 0.5rem;
+}
+
+
+.iop__cs {
+  background: var(--color-login);
+  width: 104%;
+  margin-left: -1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.iop__cs {
+  background: var(--color-login);
+  width: 104%;
+  margin-left: -1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+img.iop__img {
+  width: 35rem;
+}
+
+span.img_discription {
+  font-weight: 600;
+}
+
+.dil__note {
+  margin-top: 2rem;
+}
+
+span.d__title {
+  color: #0b2177;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+p.data {
+  font-family: var(--regular-font-family);
+  font-weight: 400;
+  margin-bottom: 1rem;
 }
