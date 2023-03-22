@@ -342,7 +342,7 @@ h2.csc__code {
 .lc__charge {
     padding: 0.5rem;
     background: #f0f9ff;
-    margin: -1rem 32rem 0 -1rem;
+    margin: -1rem 27rem 0 -1rem;
     font-size: 0.7rem;
     font-weight: 700;
 }
@@ -370,8 +370,12 @@ h4.mo__title {
   font-weight: 600;
 }
 
+.cag__topic{
+  width: 45% !important;
+  padding: 0.5rem !important;
+}
 
-h4.cc__title {
+.cc__title {
   background: #eef6fd;
   width: 38%;
   font-size: 0.8rem;
@@ -435,4 +439,74 @@ p.data {
   font-family: var(--regular-font-family);
   font-weight: 400;
   margin-bottom: 1rem;
+  cursor: text;
+    font-size: 0.79rem;
+}
+
+h4.coc_title {
+  background: #eef6fd;
+  width: 104%;
+  font-size: 0.99rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  margin-left: -1rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  font-family: var(--regular-font-family);
+  padding: 1rem;
+}
+
+
+.fg__imgs {
+  display: flex;
+  width: 104.3%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  margin-top: 2rem;
+  margin-left: -1rem;
+  background: var(--color-login);
+}
+
+.fg__img{
+  width: 20rem;
+}
+
+
+.fg__timgs{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+
+.fg__timgs-2{
+  gap: 0.9rem;
+}
+
+.sg__imgs {
+  width: 104%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  background: var(--color-login);
+  margin: 3rem 0;
+  margin-left: -0.9rem;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.tg__imgs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  background: var(--color-login);
+  margin: 3rem 0;
+  margin-left: -0.9rem;
+  width: 104%;
+  padding: 2rem;
 }
