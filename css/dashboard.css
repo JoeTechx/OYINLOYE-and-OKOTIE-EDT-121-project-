@@ -64,6 +64,28 @@
     text-align: center;
 }
 
+.user {
+    font-family: var(--regular-font-family);
+    font-weight: 500;
+  }
+  
+  .nosignin__name {
+    font-size: 0.7rem;
+    background-color: #d7e6ff;
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    text-transform: capitalize;
+    border-radius: 0.6rem;
+  }
+  
+  .nosignin__email {
+    font-size: 0.7rem;
+    text-transform: capitalize;
+  }
+  
  .text {
         font-weight: 400;
         font-size: 1.3rem;

@@ -1,4 +1,4 @@
-        // Import the functions you need from the SDKs you need
+       // Import the functions you need from the SDKs you need
         import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js";
         import { getAuth, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-auth.js";
       
@@ -35,6 +35,23 @@
             </div>
             `
         }
+        function showUserNotSignIn(user){
+          document.getElementById("user__profileURL").innerHTML =`
+          <img src="./assets/no-login.png" class="user__img"> 
+          `
+          document.getElementById("user__details").innerHTML =`
+          <div class="pne__info">
+          <img src="./assets/no-login.png" class="user__img-info csc__img"> 
+          <div class="en__info">
+          <a href="./index.html" class="user nosignin__name"> login</a>
+          <p class="user nosignin__email">you are not login</p>
+          </div>
+          </div>
+        
+          `
+        }
+
+
         function checkAuthState(){
         onAuthStateChanged(auth, (user) => {
             if (user) {
@@ -44,7 +61,7 @@
               // ...
             } else {
               // User is signed out
-              // window.location = 'index.html'
+              showUserNotSignIn(user)
               // ...
             }
           });
@@ -54,7 +71,9 @@
         signOut(auth)
         .then(() => {
         // Sign-out successful.
+        alert("logout successful")
         window.location = 'index.html'
+
         }).catch((error) => {
             // An error happened.
         });              
