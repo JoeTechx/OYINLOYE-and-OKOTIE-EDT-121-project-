@@ -11,7 +11,7 @@
   --color-light: rgba(255, 255, 255, 0.6);
   --transition: all 500ms ease;
   --drop-shadow: 0px 1px 5px rgba(0, 0, 0, 0.201);
-
+  --transition: 0.5s all ease;
   --container-width-lg: 80%;
   --container-width-md: 86%;
   --container-width-sm: 90%;

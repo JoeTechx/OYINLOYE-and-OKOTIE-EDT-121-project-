@@ -66,13 +66,13 @@
             }
           });
         }
-        
+       
         function logoutUser(){
         signOut(auth)
         .then(() => {
         // Sign-out successful.
         alert("logout successful")
-        window.location = 'index.html'
+        location.reload();
 
         }).catch((error) => {
             // An error happened.
@@ -80,7 +80,7 @@
     }
     checkAuthState();
 
-const logout = document.querySelector(".logout__btn")
+  const logout = document.querySelector(".logout__btn")
   const menuBtn = document.getElementById("menu__btn");
   const closeBtn = document.getElementById("close__btn");
 
