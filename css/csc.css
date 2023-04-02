@@ -414,7 +414,8 @@ h2.csc__code {
 }
 
 .history__note {
-  width: 40rem;
+  margin: auto;
+  width: 70%;
 }
 
 .pages .page {
@@ -426,9 +427,7 @@ h2.csc__code {
 
 .pages .page.is-active {
   display: block;
-  /* background-color: transparent; */
-  width: 100%;
-}
+  }
 
 .lc__charge {
   padding: 0.5rem;
@@ -448,16 +447,14 @@ span.modu {
 
 h4.mo__title {
   color: #06305b;
-  margin: 0 0rem 3rem -1rem;
-  padding: 1rem;
   text-align: center;
-  margin-top: 2rem;
-  background: aliceblue;
-  display: flex;
-  width: 104%;
-  justify-content: center;
-  align-items: center;
   font-weight: 600;
+}
+
+.csc__header-topic {
+  background: aliceblue;
+  margin-bottom: 1rem;
+  padding: inherit;
 }
 
 .cag__topic {
@@ -468,12 +465,11 @@ h4.mo__title {
 .cc__title {
   background: #eef6fd;
   width: 38%;
-  font-size: 0.8rem;
+  font-size: 0.68rem;
   font-weight: 600;
-  text-transform: uppercase;
+  text-transform: capitalize;
   margin-left: -1rem;
   margin-bottom: 1rem;
-  font-family: var(--regular-font-family);
   padding: 0.2rem;
   padding-left: 1rem;
   border-radius: 0rem 4rem 4rem 0rem;
@@ -487,18 +483,6 @@ p.cc__note {
 
 .iop__cs {
   background: var(--color-login);
-  width: 104%;
-  margin-left: -1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-}
-
-.iop__cs {
-  background: var(--color-login);
-  width: 104%;
-  margin-left: -1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -507,11 +491,12 @@ p.cc__note {
 }
 
 img.iop__img {
-  width: 35rem;
+  width: 75%;
 }
 
 span.img_discription {
   font-weight: 600;
+  font-size: 0.7rem;
 }
 
 .dil__note {
@@ -534,12 +519,9 @@ p.data {
 
 h4.coc_title {
   background: #eef6fd;
-  width: 104%;
   font-size: 0.99rem;
   font-weight: 600;
   text-align: center;
-  text-transform: uppercase;
-  margin-left: -1rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
   font-family: var(--regular-font-family);
@@ -548,7 +530,6 @@ h4.coc_title {
 
 .fg__imgs {
   display: flex;
-  width: 104.3%;
   justify-content: center;
   align-items: center;
   margin: auto;
@@ -556,12 +537,11 @@ h4.coc_title {
   margin-bottom: 3rem;
   padding: 2rem;
   margin-top: 2rem;
-  margin-left: -1rem;
   background: var(--color-login);
 }
 
 .fg__img {
-  width: 20rem;
+  width: 14rem;
 }
 
 .fg__timgs {
@@ -576,12 +556,10 @@ h4.coc_title {
 }
 
 .sg__imgs {
-  width: 104%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   background: var(--color-login);
   margin: 3rem 0;
-  margin-left: -0.9rem;
   gap: 1rem;
   padding: 2rem;
 }
@@ -592,17 +570,68 @@ h4.coc_title {
   gap: 1rem;
   background: var(--color-login);
   margin: 3rem 0;
-  margin-left: -0.9rem;
-  width: 104%;
   padding: 2rem;
 }
 
+@media screen and (max-width: 1024px) {
+  .history__note {
+    width: 80%;
+  }
+}
 @media screen and (max-width: 800px) {
   .cards {
     gap: 2rem;
   }
 }
 @media screen and (max-width: 768px) {
+  .nav__list-logout {
+    position: relative;
+    top: 0;
+    right: 3px;
+    box-shadow: none;
+    transition: var(--transition);
+  }
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+  .nav__list-logout:nth-child(4) {
+    animation-delay: 800ms;
+  }
+
+  .pages .page {
+    padding: 3rem;
+}
+
+.pages .history__note{
+  padding: 1rem;
+}
+
+.sg__imgs {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.tg__imgs {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.history__note {
+  width: 85%;
+}
+
+.fg__imgs {
+  flex-direction: column;
+}
+
+.fg__img {
+  width: 80%;
+}
+
+.fg__timgs p{
+  font-size: 0.8rem;
+}
+}
+@media screen and (max-width: 735px) {
   .nav__list-logout {
     position: relative;
     top: 0;
@@ -618,6 +647,13 @@ h4.coc_title {
     padding: 3rem;
 }
 
+.pages .history__note{
+  padding: 1rem;
+}
+
+.history__note {
+  width: 84%;
+}
   .cards {
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
@@ -641,6 +677,10 @@ h4.coc_title {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
+
+  h4.mo__title {
+    font-size: 0.7rem;
+  }
 }
 
 @media screen and (max-width: 545px) {
@@ -655,6 +695,10 @@ h4.coc_title {
   .card {
 margin: auto;
   }
+  .cc__title {
+    width: 12rem;
+    font-size: 0.64rem;
+}
 }
 @media screen and (max-width: 400px) {
   .pages {
