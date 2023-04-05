@@ -458,7 +458,7 @@ h4.mo__title {
 }
 
 .cag__topic {
-  width: 45% !important;
+  width: 35% !important;
   padding: 0.5rem !important;
 }
 
@@ -573,6 +573,28 @@ h4.coc_title {
   padding: 2rem;
 }
 
+
+
+
+.ac__computer {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  gap: 2rem;
+}
+
+.cat__imgs {
+  background: var(--color-login);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+
+/* =========== media queries ============ */
+
 @media screen and (max-width: 1024px) {
   .history__note {
     width: 80%;
@@ -684,8 +706,8 @@ h4.coc_title {
 }
 
 @media screen and (max-width: 545px) {
-  .pages {
-    width: 85%;
+  .pages .history__note {
+    width: 96%;
 }
   .cards {
     grid-template-columns: repeat(1, 1fr);
