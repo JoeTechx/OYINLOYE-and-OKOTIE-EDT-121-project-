@@ -732,6 +732,17 @@ margin: auto;
   .pages .page {
     background-color: transparent;
     box-shadow: none;
+        width: 130%;
+    margin-left: -2rem;
+}
+
+.cc__title {
+  background: transparent;
+  width: 100% !important;
+  font-size: 0.rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: capitalize;
 }
 
 }
