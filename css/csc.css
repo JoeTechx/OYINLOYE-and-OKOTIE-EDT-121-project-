@@ -722,13 +722,11 @@ margin: auto;
     font-size: 0.64rem;
 }
 }
+
 @media screen and (max-width: 400px) {
   .pages {
     width: 68%;
 }
-
-}
-@media screen and (max-width: 358px) {
   .pages .page {
     background-color: transparent;
     box-shadow: none;
