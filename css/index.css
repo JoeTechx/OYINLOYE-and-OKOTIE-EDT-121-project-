@@ -65,7 +65,6 @@ h1 {
   font-size: 2.5rem;
 }
 
-
 a {
   color: var(--color-text);
   transition: var(--transition);
@@ -89,7 +88,6 @@ a:hover {
   background-color: var(--color-primary);
   color: var(--color-bg);
 }
-
 
 img {
   display: block;
@@ -142,12 +140,12 @@ img {
   color: rgba(19, 31, 40, 0.4);
 }
 
-.login__signUp-link a{
-color: rgba(19, 31, 40, 0.4) !important;
+.login__signUp-link a {
+  color: rgba(19, 31, 40, 0.4) !important;
 }
 
-.login__signUp-link a:hover{
-color: rgba(3, 12, 45, 0.907) !important;
+.login__signUp-link a:hover {
+  color: rgba(3, 12, 45, 0.907) !important;
 }
 
 .googleBtn__socials {
@@ -171,10 +169,9 @@ color: rgba(3, 12, 45, 0.907) !important;
   right: 6.4rem;
 }
 
-.login img{
+.login img {
   position: relative;
   right: 7.2rem;
-
 }
 
 .lg__btn p {
@@ -200,7 +197,6 @@ color: rgba(3, 12, 45, 0.907) !important;
   color: #000000;
 }
 
-
 .btn__small {
   display: flex;
   justify-content: center;
@@ -217,29 +213,28 @@ color: rgba(3, 12, 45, 0.907) !important;
   display: none;
 }
 
-
-footer{
+footer {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.4rem;
   padding: 1rem;
-  }
+}
 
-  footer p{
-    font-weight: 600;
-    font-size: 0.7rem;
-  }
+footer p {
+  font-weight: 600;
+  font-size: 0.7rem;
+}
 
-  .hr__line{
-    width: 100%;
-    border: 1px solid rgba(209, 209, 209, 0.312);
-  }
+.hr__line {
+  width: 100%;
+  border: 1px solid rgba(209, 209, 209, 0.312);
+}
 
-   hr{
-    width: 2rem;
-    border: 3px solid #0ef;
-  }
+hr {
+  width: 2rem;
+  border: 3px solid #0ef;
+}
 
 /* =========== media queries (medium devices) =========== */
 @media screen and (max-width: 1024px) {
@@ -250,84 +245,83 @@ footer{
 
 /* =========== media queries (small devices) =========== */
 @media screen and (max-width: 768px) {
-  .courses__user-details{
-      flex-direction: column-reverse;
-      transform: translate(-1%, 30%);
-      margin: 3rem 0 0;
+  .courses__user-details {
+    flex-direction: column-reverse;
+    transform: translate(-1%, 30%);
+    margin: 3rem 0 0;
   }
-  
+
   .course__title-btn {
-      margin: 3rem 0 0;
-      flex-direction: initial;
+    margin: 3rem 0 0;
+    flex-direction: initial;
   }
 
   .nav__btn {
-      width: 2.8rem;
-      display: flex;
-      position: absolute;
-      right: 5%;
-      padding: 0.3rem 0.5rem;
-      border-radius: 0.4rem;
-      background-color: transparent;
-      transition:0.5s all ease;
+    width: 2.8rem;
+    display: flex;
+    position: absolute;
+    right: 5%;
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.4rem;
+    background-color: transparent;
+    transition: 0.5s all ease;
   }
 
-  .nav__btn:hover{
-      background-color: #f7f7f7;
+  .nav__btn:hover {
+    background-color: #f7f7f7;
   }
-  .logout__btn{
-      position: fixed;
-      top: 3rem;
-      right: 7%;
-      height: fit-content;
-      width: 15%;
-      height: 2.5rem;
-      display: none;
-      box-shadow: -3px 5px 5px -1px rgb(117 76 76 / 14%);
-      animation: navAnimation 600ms ease forwards;
-      transform: rotateX(90deg);
-      opacity: 0;
-      transform-origin: top;
+  .logout__btn {
+    position: fixed;
+    top: 3rem;
+    right: 7%;
+    height: fit-content;
+    width: 15%;
+    height: 2.5rem;
+    display: none;
+    box-shadow: -3px 5px 5px -1px rgb(117 76 76 / 14%);
+    animation: navAnimation 600ms ease forwards;
+    transform: rotateX(90deg);
+    opacity: 0;
+    transform-origin: top;
   }
-  
-  
+
   .logout__btn:nth-child(2) {
-      animation-delay: 200ms;
-    }
-  
-    @keyframes navAnimation {
-      to {
-        transform: rotateX(0);
-        opacity: 1;
-      }
-    }
-  
-    .close__btn {
-        display: none;
-    }
-    .show__nav{
-        display: flex;
-    }
+    animation-delay: 200ms;
+  }
 
-    .show-Btn.close__btn {
-      display: inline-flex;
+  @keyframes navAnimation {
+    to {
+      transform: rotateX(0);
+      opacity: 1;
     }
-  
-    .show-menuBtn.menu__btn {
-      display: none;
-    }
+  }
+
+  .close__btn {
+    display: none;
+  }
+  .show__nav {
+    display: flex;
+  }
+
+  .show-Btn.close__btn {
+    display: inline-flex;
+  }
+
+  .show-menuBtn.menu__btn {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 678px) {
-  .courses__user-details{
-      flex-direction: column-reverse;
-      transform: translate(-1%, 30%);
-      margin: 3rem 0 0;
+  .courses__user-details {
+    flex-direction: column-reverse;
+    transform: translate(-1%, 30%);
+    margin: 3rem 0 0;
   }
-  
+
   .course__title-btn {
-      margin: 3rem 0 0;
-      flex-direction: initial;
+    margin: 3rem 0 0;
+    flex-direction: initial;
   }
 }
 /* =========== media queries (small devices) =========== */
@@ -337,86 +331,85 @@ footer{
   }
 }
 
-
 @media screen and (max-width: 500px) {
   .container {
     width: var(--container-width-sm);
   }
-  
+
   .signup__container {
     transform: translate(-0.46%, 35%);
-}
+  }
 
-.lg__btn {
-  width: 23rem;
-  padding: 0.49rem 0.2rem;
-}
+  .lg__btn {
+    width: 23rem;
+    padding: 0.49rem 0.2rem;
+  }
 
-.lg__btn img {
-  width: 1.6rem;
-  right: 3.9rem;
-}
+  .lg__btn img {
+    width: 1.6rem;
+    right: 3.9rem;
+  }
 
-.login img {
-  right: 4.8rem;
-}
+  .login img {
+    right: 4.8rem;
+  }
 
-.lg__btn p {
-  font-size: 0.979rem;
-}
+  .lg__btn p {
+    font-size: 0.979rem;
+  }
 
-.courses__user-details{
-  flex-direction: column-reverse;
-  transform: translate(0%, 30%);
-  margin: 3rem 0 0;
-}
+  .courses__user-details {
+    flex-direction: column-reverse;
+    transform: translate(0%, 30%);
+    margin: 3rem 0 0;
+  }
 
-.course__title-btn {
-  margin: 3rem 0 0;
-  flex-direction: initial;
-  gap: 1rem;
-}
+  .course__title-btn {
+    margin: 3rem 0 0;
+    flex-direction: initial;
+    gap: 1rem;
+  }
 }
 
 @media screen and (max-width: 375px) {
   .lg__btn {
     width: 19rem;
-}
+  }
 
-.lg__btn img {
-  width: 1.5rem;
-  right: 2.59rem;
-}
+  .lg__btn img {
+    width: 1.5rem;
+    right: 2.59rem;
+  }
 
-.login img {
-  width: 1.5rem;
-  right: 3.4rem;
-}
+  .login img {
+    width: 1.5rem;
+    right: 3.4rem;
+  }
 
-.lg__btn p {
-  font-size: 0.86rem;
-}
-.project__logo {
-  width: 7rem;
-  margin-top: 1rem;
-}
+  .lg__btn p {
+    font-size: 0.86rem;
+  }
+  .project__logo {
+    width: 7rem;
+    margin-top: 1rem;
+  }
 }
 
 @media screen and (max-width: 320px) {
   .lg__btn {
     width: 16rem;
-}
+  }
 
-.lg__btn img {
-  right: 2rem;
-}
+  .lg__btn img {
+    right: 2rem;
+  }
 
-.login img {
-  width: 1.5rem;
-  right: 2rem;
-}
+  .login img {
+    width: 1.5rem;
+    right: 2rem;
+  }
 
-.lg__btn p {
-  font-size: 0.86rem;
-}
+  .lg__btn p {
+    font-size: 0.86rem;
+  }
 }

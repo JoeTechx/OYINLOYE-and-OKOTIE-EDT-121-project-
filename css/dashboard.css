@@ -1,229 +1,224 @@
-.courses__user-details{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    transform: translateY(50%);
-    margin: 3rem 0 0;
+.courses__user-details {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transform: translateY(50%);
+  margin: 3rem 0 0;
 }
 
-
-.course__title-btn{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
+.course__title-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
 }
 
-
-.course__btn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.69rem 3rem;
-    background-color: var(--color-primary-2);
+.course__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.69rem 3rem;
+  background-color: var(--color-primary-2);
 }
 
-.users__details{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.users__details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.user__profileURL{
- display: none;
+.user__profileURL {
+  display: none;
 }
 
-.user__img-info{
-    width: 5rem;
-    border-radius: 50%;
+.user__img-info {
+  width: 5rem;
+  border-radius: 50%;
 }
 
 .pne__info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
 
 .en__info {
-    display: contents;
+  display: contents;
 }
-
 
 .display__name {
-    font-weight: 700;
-    margin-bottom: 1.59rem;
-    font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1.59rem;
+  font-size: 1.6rem;
 }
 .email {
-    font-weight: 600;
-    font-size: 1.2rem;
-    text-align: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-align: center;
 }
 
 .user {
-    font-family: var(--regular-font-family);
-    font-weight: 500;
-  }
-  
-  .nosignin__name {
-    font-size: 0.7rem;
-    background-color: #d7e6ff;
-    color: var(--color-primary);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 3rem;
-    text-transform: capitalize;
-    border-radius: 0.6rem;
-  }
-  
-  .nosignin__email {
-    font-size: 0.7rem;
-    text-transform: capitalize;
-  }
-  
- .text {
-        font-weight: 400;
-        font-size: 1.3rem;
-        text-align: center;
-        letter-spacing: 0.2rem;
- }
+  font-family: var(--regular-font-family);
+  font-weight: 500;
+}
 
- .btn__small {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.5rem 1rem;
-    margin-top: 1rem;
-    text-transform: capitalize;
-    font-size: 0.8rem;
-    border-radius: 0.5rem;
+.nosignin__name {
+  font-size: 0.7rem;
+  background-color: #d7e6ff;
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  text-transform: capitalize;
+  border-radius: 0.6rem;
+}
+
+.nosignin__email {
+  font-size: 0.7rem;
+  text-transform: capitalize;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 1.3rem;
+  text-align: center;
+  letter-spacing: 0.2rem;
+}
+
+.btn__small {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  border-radius: 0.5rem;
 }
 
 .nav__btn {
-    width: 3.5rem;
-    display: none;
+  width: 3.5rem;
+  display: none;
 }
 /* =========== media queries (small devices) =========== */
 @media screen and (max-width: 768px) {
-    .courses__user-details{
-        flex-direction: column-reverse;
-        transform: translate(-1%, 30%);
-        margin: 3rem 0 0;
-    }
-    
-    .course__title-btn {
-        margin: 3rem 0 0;
-        flex-direction: initial;
-    }
+  .courses__user-details {
+    flex-direction: column-reverse;
+    transform: translate(-1%, 30%);
+    margin: 3rem 0 0;
+  }
 
-    .nav__btn {
-        width: 2.8rem;
-        display: flex;
-        position: absolute;
-        right: 5%;
-        padding: 0.3rem 0.5rem;
-        border-radius: 0.4rem;
-        background-color: transparent;
-        transition:0.5s all ease;
-    }
+  .course__title-btn {
+    margin: 3rem 0 0;
+    flex-direction: initial;
+  }
 
-    .nav__btn:hover{
-        background-color: #f7f7f7;
-    }
-    .logout__btn{
-        position: fixed;
-        top: 3rem;
-        right: 7%;
-        height: fit-content;
-        width: 15%;
-        height: 2.5rem;
-        display: none;
-        box-shadow: -3px 5px 5px -1px rgb(117 76 76 / 14%);
-        animation: navAnimation 600ms ease forwards;
-        transform: rotateX(90deg);
-        opacity: 0;
-        transform-origin: top;
-    }
-    
-    
-    .logout__btn:nth-child(2) {
-        animation-delay: 200ms;
-      }
-    
-      @keyframes navAnimation {
-        to {
-          transform: rotateX(0);
-          opacity: 1;
-        }
-      }
-    
-      .close__btn {
-          display: none;
-      }
-      .show__nav{
-          display: flex;
-      }
+  .nav__btn {
+    width: 2.8rem;
+    display: flex;
+    position: absolute;
+    right: 5%;
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.4rem;
+    background-color: transparent;
+    transition: 0.5s all ease;
+  }
 
-      .show-Btn.close__btn {
-        display: inline-flex;
-      }
-    
-      .show-menuBtn.menu__btn {
-        display: none;
-      }
+  .nav__btn:hover {
+    background-color: #f7f7f7;
+  }
+  .logout__btn {
+    position: fixed;
+    top: 3rem;
+    right: 7%;
+    height: fit-content;
+    width: 15%;
+    height: 2.5rem;
+    display: none;
+    box-shadow: -3px 5px 5px -1px rgb(117 76 76 / 14%);
+    animation: navAnimation 600ms ease forwards;
+    transform: rotateX(90deg);
+    opacity: 0;
+    transform-origin: top;
+  }
+
+  .logout__btn:nth-child(2) {
+    animation-delay: 200ms;
+  }
+
+  @keyframes navAnimation {
+    to {
+      transform: rotateX(0);
+      opacity: 1;
+    }
+  }
+
+  .close__btn {
+    display: none;
+  }
+  .show__nav {
+    display: flex;
+  }
+
+  .show-Btn.close__btn {
+    display: inline-flex;
+  }
+
+  .show-menuBtn.menu__btn {
+    display: none;
+  }
 }
 /* =========== media queries (small devices) =========== */
 @media screen and (max-width: 678px) {
-    .courses__user-details{
-        flex-direction: column-reverse;
-        transform: translate(-1%, 30%);
-        margin: 3rem 0 0;
-    }
-    
-    .course__title-btn {
-        margin: 3rem 0 0;
-        flex-direction: initial;
-    }
+  .courses__user-details {
+    flex-direction: column-reverse;
+    transform: translate(-1%, 30%);
+    margin: 3rem 0 0;
+  }
+
+  .course__title-btn {
+    margin: 3rem 0 0;
+    flex-direction: initial;
+  }
 }
 
 /* =========== media queries (small devices) =========== */
 @media screen and (max-width: 500px) {
-    .courses__user-details{
-        flex-direction: column-reverse;
-        transform: translate(0%, 30%);
-        margin: 3rem 0 0;
-    }
-    
-    .course__title-btn {
-        margin: 3rem 0 0;
-        flex-direction: initial;
-        gap: 1rem;
-    }
+  .courses__user-details {
+    flex-direction: column-reverse;
+    transform: translate(0%, 30%);
+    margin: 3rem 0 0;
+  }
+
+  .course__title-btn {
+    margin: 3rem 0 0;
+    flex-direction: initial;
+    gap: 1rem;
+  }
 }
 
 /* =========== media queries (small devices) =========== */
 @media screen and (max-width: 430px) {
-    .courses__user-details{
-        flex-direction: column-reverse;
-        transform: translate(0%, 30%);
-        margin: 3rem 0 0;
-    }
-    
-    .course__title-btn {
-        gap: 0.5rem;
-    }
+  .courses__user-details {
+    flex-direction: column-reverse;
+    transform: translate(0%, 30%);
+    margin: 3rem 0 0;
+  }
 
-    .course__btn {
-        padding: 0.49rem 2rem;
-    }
+  .course__title-btn {
+    gap: 0.5rem;
+  }
 
-    .logout__btn {
-        width: 22%;
-        height: 2.5rem;
-    }
+  .course__btn {
+    padding: 0.49rem 2rem;
+  }
+
+  .logout__btn {
+    width: 22%;
+    height: 2.5rem;
+  }
 }

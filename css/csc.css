@@ -427,7 +427,7 @@ h2.csc__code {
 
 .pages .page.is-active {
   display: block;
-  }
+}
 
 .lc__charge {
   padding: 0.5rem;
@@ -573,9 +573,6 @@ h4.coc_title {
   padding: 2rem;
 }
 
-
-
-
 .ac__computer {
   display: grid;
   align-items: center;
@@ -591,7 +588,6 @@ h4.coc_title {
   justify-content: center;
   padding: 2rem;
 }
-
 
 /* =========== media queries ============ */
 
@@ -623,35 +619,35 @@ h4.coc_title {
 
   .pages .page {
     padding: 3rem;
-}
+  }
 
-.pages .history__note{
-  padding: 1rem;
-}
+  .pages .history__note {
+    padding: 1rem;
+  }
 
-.sg__imgs {
-  grid-template-columns: repeat(1, 1fr);
-}
+  .sg__imgs {
+    grid-template-columns: repeat(1, 1fr);
+  }
 
-.tg__imgs {
-  grid-template-columns: repeat(1, 1fr);
-}
+  .tg__imgs {
+    grid-template-columns: repeat(1, 1fr);
+  }
 
-.history__note {
-  width: 85%;
-}
+  .history__note {
+    width: 85%;
+  }
 
-.fg__imgs {
-  flex-direction: column;
-}
+  .fg__imgs {
+    flex-direction: column;
+  }
 
-.fg__img {
-  width: 80%;
-}
+  .fg__img {
+    width: 80%;
+  }
 
-.fg__timgs p{
-  font-size: 0.8rem;
-}
+  .fg__timgs p {
+    font-size: 0.8rem;
+  }
 }
 @media screen and (max-width: 735px) {
   .nav__list-logout {
@@ -667,15 +663,15 @@ h4.coc_title {
 
   .pages .page {
     padding: 3rem;
-}
+  }
 
-.pages .history__note{
-  padding: 1rem;
-}
+  .pages .history__note {
+    padding: 1rem;
+  }
 
-.history__note {
-  width: 84%;
-}
+  .history__note {
+    width: 84%;
+  }
   .cards {
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
@@ -684,7 +680,7 @@ h4.coc_title {
 @media screen and (max-width: 640px) {
   .pages .page {
     padding: 2rem;
-}
+  }
   .cards {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
@@ -694,7 +690,7 @@ h4.coc_title {
 @media screen and (max-width: 545px) {
   .pages .page {
     padding: 1rem;
-}
+  }
   .cards {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
@@ -708,39 +704,38 @@ h4.coc_title {
 @media screen and (max-width: 545px) {
   .pages .history__note {
     width: 96%;
-}
+  }
   .cards {
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
   }
 
   .card {
-margin: auto;
+    margin: auto;
   }
   .cc__title {
     width: 12rem;
     font-size: 0.64rem;
-}
+  }
 }
 
 @media screen and (max-width: 400px) {
   .pages {
     width: 68%;
-}
+  }
   .pages .page {
     background-color: transparent;
     box-shadow: none;
-        width: 130%;
+    width: 130%;
     margin-left: -2rem;
-}
+  }
 
-.cc__title {
-  background: transparent;
-  width: 100% !important;
-  font-size: 0.rem;
-  font-weight: 600;
-  text-align: center;
-  text-transform: capitalize;
-}
-
+  .cc__title {
+    background: transparent;
+    width: 100% !important;
+    font-size: 0rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+  }
 }
