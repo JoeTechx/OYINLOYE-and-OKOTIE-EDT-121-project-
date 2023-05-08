@@ -12,47 +12,115 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
     <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/csc.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <!-- <link rel="stylesheet" href="./css/dashboard.css" /> -->
     <title>E-course open source app</title>
   </head>
   <body>
-    <div class="container header-logo">
-      <div class="project__logo">
-        <img src="./assets/projectlogo.png" alt="logo" />
+    <nav class="container header-logo csc__header">
+      <div class="project__logo csc__logo">
+        <img src="./assets/projectlogo1.png" alt="logo" />
       </div>
-    </div>
 
-    <div class="container">
-      <div class="signup__container">
-        <div class="signup__header">
-          <div class="header__logo">
-            <img src="./assets/Repository.png" alt="" />
-          </div>
-          <div class="login__signUp-link">
-            <a href="./index.html">Login</a>
-            <p>/</p>
-            <a href="./sign_up.html">SignUp</a>
-          </div>
-          <p>Login with google</p>
-        </div>
-        <div class="googleBtn__socials">
-          <button class="btn lg__btn login" id="sign_up">
-            <img src="./assets/google.png" alt="google" />
-            <p>Login with Google</p>
-          </button>
-          <div class="social__login">
-            <a href="#">
-              <i class="ri-facebook-circle-fill"></i>
-            </a>
-            <a href="#"><i class="ri-twitter-fill"></i></a>
-            <a href="#
-            "><i class="ri-github-fill"></i></a>
-          </div>
-        </div>
+      <div class="navbar">
+        <a href="./index.html" style="--i:1;" class="active">Home</a>
+        <a href="./index.html" style="--i:2;">About</a>
+        <a href="./index.html" style="--i:3;">Contact</a>
       </div>
-    </div>
+      <div id="user__profileURL" style="--i:4;" class="users__profileURL"></div>
+      <div class="user__info">
+        <div id="user__details" class="users__details"></div>
+        <hr class="seperator__line" />
+        <ul class="nav__menu-info">
+          <li class="nav__list-info">
+            <i class="uil uil-apps nav__icon-info"></i>
+            <a href="./dashboard.html" class="nav__link-info"
+              >go to dashboard</a
+            >
+          </li>
+          <li class="nav__list-info">
+            <i class="uil uil-import nav__icon-info"></i>
+            <a href="./download.html" class="nav__link-info">Pratices PQ</a>
+          </li>
+          <li class="nav__list-info">
+            <i class="uil uil-setting nav__icon-info"></i>
+            <a href="./settings.html" class="nav__link-info">settings</a>
+          </li>
+          <li id="logout" class="logout__btn csc__logout nav__list-logout">
+            <i class="uil uil-sign-out-alt nav__icon-info"></i>
+            <p class="nav__link-logout">logout</p>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-    <script src="./js/sign-up.js" type="module"></script>
+    <main class="main">
+      <section class="home container">
+        <div class="home__content">
+          <h3>Hello!</h3>
+          <h1>Oyinloye Joseph</h1>
+          <h3>I'm a <span class="multiple-text"></span></h3>
+          <p>
+            Diligent software engineer with 2+ years experience of in
+          software development. I'm versed in building innovative and
+            cutting edge software programme for the impressive suite of clients
+            within its global reach. I write programs like JavaScript, React and Nodejs for my backend
+          </p>
+          <div class="social__media">
+            <a href="#" style="--i:5;"><i class="ri-facebook-fill"></i></a>
+            <a href="#" style="--i:6;"><i class="ri-twitter-fill"></i></a>
+            <a href="#" style="--i:7;"><i class="ri-instagram-fill"></i></a>
+            <a href="#" style="--i:8;"><i class="ri-linkedin-fill"></i></a>
+          </div>
+          <a href="./login.html" class="btn">Start Reading</a>
+
+        </div>
+        <div class="home__img">
+            <img src="./assets/joex.png" alt="joex">
+        </div>
+      </section>
+
+      <section class="home container home__reverse">
+        <div class="home__content">
+          <h3>Hello!</h3>
+          <h1>Okotie Samuel Ogheneyoma</h1>
+          <h3>I'm a <span class="auto-text"></span></h3>
+          <p>
+            Diligent frontend developer with all most 1 year experience of in
+            application development. I'm versed in building innovative and
+            cutting edge software programme for the impressive suite of clients
+            within its global reach.
+          </p>
+          <div class="social__media">
+            <a href="#" style="--i:5;"><i class="ri-facebook-fill"></i></a>
+            <a href="#" style="--i:6;"><i class="ri-twitter-fill"></i></a>
+            <a href="#" style="--i:7;"><i class="ri-instagram-fill"></i></a>
+            <a href="#" style="--i:8;"><i class="ri-linkedin-fill"></i></a>
+          </div>
+          <a href="./login.html" class="btn">Start Reading</a>
+
+        </div>
+        <div class="home__img">
+            <img src="./assets/yoma.png" alt="yoma">
+        </div>
+      </section>
+    </main>
+    <hr class="hr__line">
+    <footer>
+    <hr>
+      <small>&copy; 2023 EDT121 project</small>
+      <hr>
+    </footer>
   </body>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script src="./js/dashboard.js" type="module"></script>
+  <script src="./js/csc.js"></script>
+  <script src="./js/home.js"></script>
 </html>

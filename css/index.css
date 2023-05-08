@@ -216,6 +216,31 @@ color: rgba(3, 12, 45, 0.907) !important;
   width: 3.5rem;
   display: none;
 }
+
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 1rem;
+  }
+
+  footer p{
+    font-weight: 600;
+    font-size: 0.7rem;
+  }
+
+  .hr__line{
+    width: 100%;
+    border: 1px solid rgba(209, 209, 209, 0.312);
+  }
+
+   hr{
+    width: 2rem;
+    border: 3px solid #0ef;
+  }
+
 /* =========== media queries (medium devices) =========== */
 @media screen and (max-width: 1024px) {
   .container {
